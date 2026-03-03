@@ -595,6 +595,7 @@ export default function Header() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-10 items-center justify-end">
             <div className="flex items-center gap-4">
+              {/* TODO: Replace with actual Instagram profile URL */}
               <Link 
                 href="https://instagram.com" 
                 target="_blank" 
@@ -604,6 +605,7 @@ export default function Header() {
               >
                 <Instagram className="h-4 w-4 stroke-[1.5px]" />
               </Link>
+              {/* TODO: Replace with actual Facebook profile URL */}
               <Link 
                 href="https://facebook.com" 
                 target="_blank" 
@@ -625,11 +627,13 @@ export default function Header() {
             {/* Left: Mobile Menu + Search Icon */}
             <div className="flex items-center gap-2">
               <MobileMenu />
+              {/* TODO: Implement search functionality */}
               <Button 
                 variant="ghost" 
                 size="icon"
                 className="hidden md:flex"
                 aria-label="Search"
+                disabled
               >
                 <Search className="h-5 w-5 stroke-[1.5px]" />
               </Button>
@@ -652,10 +656,12 @@ export default function Header() {
                   <User className="h-5 w-5 stroke-[1.5px]" />
                 </Link>
               </Button>
+              {/* TODO: Implement shopping cart functionality */}
               <Button 
                 variant="ghost" 
                 size="icon"
                 aria-label="Shopping bag"
+                disabled
               >
                 <ShoppingBag className="h-5 w-5 stroke-[1.5px]" />
               </Button>

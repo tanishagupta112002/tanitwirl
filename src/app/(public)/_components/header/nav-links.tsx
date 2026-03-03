@@ -17,7 +17,7 @@ const navItems = [
 
 export function NavLinks({ isActive }: NavLinksProps) {
   return (
-    <nav className="flex items-center justify-center py-4">
+    <nav className="flex items-center justify-center py-4" aria-label="Main navigation">
       <ul className="flex items-center gap-8">
         {navItems.map((item) => (
           <li key={item.href}>
